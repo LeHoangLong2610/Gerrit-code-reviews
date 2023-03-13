@@ -2,7 +2,7 @@
 - This is a Python program designed to extract code review data from Gerrit, and save it to a JSON file. The program can also display the review data in a table and export it as a PDF file.
 
 #Installation
-- You need to first extract the .zip file. 
+- You need to first download and extract the .zip file. 
 - To run this program you need to have Python installed on your device.
 - You can download and install Python from this website https://www.python.org/downloads/.
 - Then navigate to the directory where the requ file is located using the 'cd' command. For example "cd C:\Users\Documents\pythonGerrit"
