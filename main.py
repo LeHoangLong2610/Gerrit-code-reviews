@@ -95,13 +95,13 @@ def export_pdf(file_name = "android_review.json"):
                     counts_hours_days = data.groupby(data['updated'].dt.hour).size()
                     x_ticks = range(24)
                     x_label = 'Hour of the Day'
-                    title = 'Android Code Reviews in Gerrit by Hour'
+                    title = 'Total Android Code Reviews in Gerrit by Hour'
                 #if the time interval is more than one days, count reviews per day
                 elif (before_date - after_date).days >= 1:
                     counts_hours_days = data.groupby(data['updated'].dt.date).size()
                     x_ticks = counts_hours_days.index
                     x_label = 'Date'
-                    title = 'Android Code Reviews in Gerrit by Day'
+                    title = 'Total Android Code Reviews in Gerrit by Day'
 
                 #create the plot 2
                 plot2.bar(x_ticks, counts_hours_days.values)
